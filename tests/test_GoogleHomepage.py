@@ -4,12 +4,13 @@ import pytest
 from time import sleep
 
 
-@pytest.mark.testpage
+@pytest.mark.clearcache
 class ClearSettingsCacheTests(BaseClass):
 
     def test_ClearSettingsCache(self):
 
         oppo = SettingsElements(self.driver)
 
-        self.scroll(SettingsElements.airplaneMode, SettingsElements.appManagement)
+        self.scroll()
+        self.clickElement(oppo.appManagement)
         sleep(3)

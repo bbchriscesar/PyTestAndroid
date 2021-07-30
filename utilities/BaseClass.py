@@ -5,6 +5,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from appium.webdriver.common.touch_action import TouchAction
+from time import sleep
 
 
 @pytest.mark.usefixtures("setup")
@@ -24,7 +25,7 @@ class BaseClass:
         return logger
 
     def checkElementVisibility(self, locator):
-        wait = WebDriverWait(self.driver, 30)
+        wait = WebDriverWait(self.driver, 60)
         try:
             element = wait.until(EC.element_to_be_clickable((locator[0], locator[1])))
             return element
@@ -48,8 +49,6 @@ class BaseClass:
         except Exception as ex:
             print(ex)
 
-    def scroll(self, locator1, locator2):
-        BaseClass.checkElementVisibility(self, locator1)
-        element1 = locator1
-        element2 = locator2
-        self.driver.scroll(element1, element2)
+    def scroll(self):
+        sleep(3)
+        self.driver.find_element_by_android_uiautomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"App management\"))")
