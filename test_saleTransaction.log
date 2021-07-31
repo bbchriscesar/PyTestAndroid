@@ -1,0 +1,13 @@
+2021-07-31 19:12:15,788 :INFO : test_saleTransaction :Verify SALE is present
+2021-07-31 19:12:15,987 :INFO : test_saleTransaction :Verify CARD VERIFICATION is present
+2021-07-31 19:12:16,185 :INFO : test_saleTransaction :Verify GIFT is present
+2021-07-31 19:12:16,373 :INFO : test_saleTransaction :Verify REFUND is present
+2021-07-31 19:12:16,640 :INFO : test_saleTransaction :Tap SALE button
+2021-07-31 19:12:18,737 :INFO : test_saleTransaction :Enter amount
+2021-07-31 19:12:20,744 :INFO : test_saleTransaction :Tap OKAY button
+2021-07-31 19:12:20,936 :INFO : test_saleTransaction :Enter Tax Amount
+2021-07-31 19:12:21,653 :INFO : test_saleTransaction :Tap OKAY button
+2021-07-31 19:12:23,049 :INFO : test_saleTransaction :Enter Tip Amount
+2021-07-31 19:12:23,758 :INFO : test_saleTransaction :Tap OKAY button
+2021-07-31 19:12:25,702 :INFO : test_saleTransaction :Tap OKAY button
+2021-07-31 19:12:28,629 :INFO : test_saleTransaction :Tap OKAY button
